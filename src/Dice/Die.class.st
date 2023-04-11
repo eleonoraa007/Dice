@@ -8,8 +8,22 @@ Class {
 }
 
 { #category : #initialization }
+Die class >> withFaces: anInteger [
+
+	| d |
+	d:= Die new.
+	d faces: anInteger.
+	^ d
+]
+
+{ #category : #initialization }
 Die >> faces [
 	^ faces 
+]
+
+{ #category : #initialization }
+Die >> faces: anInteger [
+	faces := anInteger 
 ]
 
 { #category : #initialization }
@@ -23,4 +37,13 @@ Die >> initialize [
 Die >> roll [ 
 
 	^ faces atRandom
+]
+
+{ #category : #initialization }
+Die >> withFaces: anInteger [
+
+	| d |
+	d:= Die new.
+	d faces: anInteger.
+	^ d
 ]
