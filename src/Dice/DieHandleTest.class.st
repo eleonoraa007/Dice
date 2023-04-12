@@ -56,3 +56,9 @@ DieHandleTest >> testSimpleHandle [
 
 	self assert: 2 D20 diceNumber  equals: 2
 ]
+
+{ #category : #tests }
+DieHandleTest >> testSumming [
+
+	self assert: (3 D4 + 2 D6) diceNumber equals: 5
+]
